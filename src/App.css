@@ -1,0 +1,96 @@
+.div-carousel{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+
+.my-carousel{
+  text-align: center;
+  display: flex;
+  border: 1px solid black;
+  width: 800px;
+  height: 150px;
+  padding: 10px;
+  box-shadow: inset 200px 0 30px -52px rgb(255, 255, 255), inset -200px 0 30px -52px rgb(255, 255, 255);
+}
+
+.carousel-item.active{
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  align-items: center;
+  padding: 0px 40px;
+  z-index: -1;
+}
+
+
+
+.carousel-control-next:focus, .carousel-control-prev:focus{
+  opacity: .6;
+}
+
+.carousel-control-next:hover, .carousel-control-prev:hover{
+  opacity: .8;
+}
+
+.carousel-control-next {
+  margin-right: 20px;
+}
+
+.carousel-control-prev {
+  margin-left: 20px;
+}
+
+.carousel-inner{
+  width: 70%;
+  margin: auto;
+}
+
+
+.custom-control-prev-icon,
+.custom-control-next-icon {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  padding: 5px;
+  max-height: 70%;
+  font-size: .7em;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6) !important;
+  overflow: hidden;
+  
+}
+
+.custom-control-prev-icon h3, .custom-control-next-icon h3{
+  font-size: 1.6em;
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.carousel-item{
+  animation: fadeIn .7s ease-in-out;
+}
+
+.carousel-item-next{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    align-items: center;
+    padding: 0px 40px;
+}
+
+.carousel-item-prev {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  align-items: center;
+  padding: 0px 40px;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
